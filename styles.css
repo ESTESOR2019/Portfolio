@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: white;
+
+  background: radial-gradient(circle at top, #0d1b4c, #050816);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+
+  position: fixed;
+  width: 100%;
+
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-weight: 800;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #cfd8ff;
+  text-decoration: none;
+}
+
+.btn-login {
+  background: linear-gradient(45deg, #00c6ff, #007bff);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 0 20px;
+}
+
+.badge {
+  background: rgba(0, 198, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: #aab3ff;
+  max-width: 600px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+/* BOTONES */
+.btn {
+  padding: 15px 25px;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.primary {
+  background: linear-gradient(45deg, #00c6ff, #007bff);
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+}
