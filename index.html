@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio Esteban</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="logo">Esteban Soraire .dev</div>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Proyectos</a>
-    <a href="#">Sobre mí</a>
-  </nav>
-  <button class="btn-login">Contacto</button>
-</header>
-
-<section class="hero">
-  <div class="badge">🎬 Animación experimental</div>
-
-  <h1>
-    Explorando el ruido <br>
-    y el silencio visual
-  </h1>
-
-  <p>
-    Animación frame by frame, intervención plástica
-    y exploración audiovisual contemporánea
-  </p>
-
-  <div class="buttons">
-    <button class="btn primary">Ver proyecto</button>
-    <button class="btn secondary">Sobre mí</button>
-    <button class="btn secondary">Contacto</button>
-  </div>
-</section>
-
+    <header>
+        <h1>Esteban Soraire</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Desarrollo Web</h3>
+                <p>Creación de sitios modernos.</p>
+            </div>
+            <div class="card">
+                <h3>Backend</h3>
+                <p>APIs en .NET y SQL Server.</p>
+            </div>
+            <div class="card">
+                <h3>Soporte</h3>
+                <p>Mantenimiento y mejoras.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form onsubmit="enviarFormulario(event)">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2026 - Mi Sitio</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

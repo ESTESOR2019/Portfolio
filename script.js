@@ -1,8 +1,8 @@
-// scroll suave
-document.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', e => {
+function saludar() {
+    alert("Hola! 👋 Bienvenido a mi sitio");
+}
+
+function enviarFormulario(e) {
     e.preventDefault();
-    document.querySelector(link.getAttribute('href'))
-      .scrollIntoView({ behavior: 'smooth' });
-  });
-});
+    alert("Formulario enviado (simulado)");
+}
